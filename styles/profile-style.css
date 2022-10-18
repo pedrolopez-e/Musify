@@ -14,6 +14,12 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: white;
+}
+
+html {
+    /*background-image: linear-gradient(blueviolet, blue);*/
+    background-color: gray;
 }
 
 /* ------------------------ HEADER ---------------------------------*/ 
@@ -93,6 +99,14 @@ header button {
     margin-top: 20px;
 }
 
+header button:hover {
+    background-color: rgb(107, 107, 107);
+    color: white;
+    cursor: pointer;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+}
+
 /*---------------------------------- MAIN ---------------------------*/
 
 main > div {
@@ -101,7 +115,10 @@ main > div {
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 #sobre-mi {
@@ -116,4 +133,55 @@ main > div section p, main ul {
     border-radius: 7px;
     padding: 15px;
     list-style: none;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 90%;
+    min-width: fit-content;
+    width: calc(100% - 100px);
+    align-self: center;
+    background-color: rgb(247, 247, 247);
+    border-radius: 7px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#mi-musica {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mi-musica h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video div {
+    height: 80%;
+    width: 80%;
+    background-color: rgb(129, 129, 129);
+    border-radius: 7px;
+}
+
+/*------------------------------------ FOOTER --------------------------------------*/
+
+footer {
+    padding-left: 50px;
+    padding-top: 20px;
+    background-color: rgb(24, 24, 44);
+    height: 100px;
+}
+
+footer h3 {
+    color: rgb(222, 222, 233)
 }
