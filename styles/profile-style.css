@@ -246,6 +246,19 @@ main > div section p, main ul {
     left: 13.4%;
 }
 
+@-webkit-keyframes rotating {
+    from{
+    -webkit-transform: rotate(0deg);
+    }
+    to{
+    -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+}
+
 /*------------------------------------ FOOTER --------------------------------------*/
 
 footer {
