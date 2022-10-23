@@ -178,6 +178,10 @@ main > div section p, main ul {
     padding-right: 0.7em;
 }
 
+.tape:hover {
+    cursor: pointer;
+}
+
 .tape > :first-child {
     height: 4rem;
     width: 100%;
