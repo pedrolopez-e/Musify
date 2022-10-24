@@ -133,6 +133,20 @@ main > div section p, main ul {
     list-style: none;
 }
 
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.6rem;
+    margin-top: 0;
+    border: none;
+    margin-right: 20rem;
+}
+
 #videos {
     display: grid;
     grid-template-columns: minmax(10rem, 1fr) minmax(10rem, 1fr);
@@ -191,12 +205,6 @@ main > div section p, main ul {
     justify-content: center;
     align-items: center;
 }
-
-/* .tape > :nth-child(2) {
-    height: 1.5rem;
-    width: 60%;
-    background-color: black;
-} */
 
 .trapezoid {
     border-bottom: 1.4rem solid rgb(65, 65, 65);
