@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* MARGENES */
+body,
+h1,
+h2,
+h3,
+.menu{
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;;
+    background-color: white;
+}
+
+
+/* NAVBAR */
+.menu{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    width: 100vw;
+    align-items: center;
+}
+.menu_items{
+    display: flex;
+    font-weight: bold; 
+    margin-right: 2rem;
+    align-items: center;
+}
+.menu_items li a{
+    
+    margin: 7px;
+    font-size: 1rem;
+    display: flex;
+    color: white;
+}
+.menu_items .crear-publi{
+    padding: 6px 6px;
+    background-color: #CD5C5C;
+    border-radius: 8px;
+}
+.menu_items .crear-publi:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+    text-decoration: none;
+}
+.menu_items li a:hover{
+    text-decoration: underline;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    margin-left: 3rem;
+    color: white;
+    font-size: 1.4rem;
+}
+.logo-txt{
+    cursor: pointer;
+    display: inline-block;
+    animation: saltar 6s infinite forwards;
+    transform: translateX(0);
+}
+.logo .logo-img{
+    display: flex;
+    align-items: center;
+    margin-left: .4rem;
+}
+.logo .logo-img img{
+    width: 3rem;
+    height: auto;
+}
+
+
+/* Barra de busqueda */
+.search-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: .7rem;
+    color: ghostwhite;
+    background-color: #F8F8FF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: .2s ease;
+    overflow: hidden;
+}
+.search-container.active{
+    width: 300px;
+}
+.search-container .icono{
+    position: absolute;
+    font-size: 21px;
+    color: #444;
+    left: 21px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+.search-container .input{
+    background-color: ghostwhite;
+    position: relative;
+    width: 300px;
+    left: 60px;
+    height: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-container .input input{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+
+/* Titulo */
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    color: black;
+    border-style: ridge;
+    text-shadow: 0 0 2px #fff;
+}
+
+
+/* Carrusel */
+.item img{
+    height: 25rem; 
+}
+
+/* Cartas */
+.cartas-container{
+    display: flex;
+    background-color: cornflowerblue;
+    color: white;
+}
+.container{
+    width: 1500px;
+    margin: auto;
+}
+
+.container h2{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.cartas-container .container{
+    padding: 200px 0px;
+}
+
+.cartas-container .programas{
+    display: flex;
+    justify-content: center;
+}
+
+.cartas p{
+    display: block;
+}
+
+.cartas-container .carta{
+    background-color: #40404088;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cartas-container .programas{
+    gap: 5rem;
+    text-align: center;
+}
+
+.carta:first-child{
+
+}
+.carta:nth-child(2){
+
+}
+.carta:nth-child(3){
+
+}
+
+.btn_card{
+    background-color: #CD5C5C;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    padding: 8px 8px;
+    color: white;
+    margin-top: 2rem;
+    border-style: none;
+}
+.btn_card:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+/* footer */
+.footer{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+@keyframes saltar{
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(50px);
+    }
+}
