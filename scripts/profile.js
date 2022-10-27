@@ -5,7 +5,7 @@ let tapes = document.querySelectorAll('.tape');
 tapes.forEach(tape => tape.addEventListener('click', (event) => {
     let targetCircles = event.target.querySelectorAll('.circle');
     let circles = document.querySelectorAll('.circle'); 
-    if ((event.target).classList.contains('playing') == true) {
+    if ((event.target).classList.contains('playing')) {
         (event.target).classList.remove('playing');
         circles.forEach(circle => circle.classList.remove('rotating'));
     } else {
@@ -13,7 +13,7 @@ tapes.forEach(tape => tape.addEventListener('click', (event) => {
         circles.forEach(circle => circle.classList.remove('rotating'));
         targetCircles.forEach(circle => circle.classList.add('rotating'));
     };
-})); // Debería hacer algo para que paren de girar cuadno termina la cancion
+})); // Debería hacer algo para que paren de girar cuando termina la cancion
 
 let tape1 = document.querySelector('#tape1');
 let tape2 = document.querySelector('#tape2');
@@ -24,39 +24,42 @@ let audio2 = document.querySelector("#audio2");
 let audio3 = document.querySelector("#audio3");
 let audio4 = document.querySelector("#audio4");
 
+function stopTapes() {
+    audio1.load();
+    audio1.pause();
+    audio2.load();
+    audio2.pause();
+    audio3.load();
+    audio3.pause();
+    audio4.load();
+    audio4.pause();
+}
+
 tape1.addEventListener('click', (event) => {
-    if ((event.target).classList.contains("playing") == true) {
+    stopTapes();
+    if ((event.target).classList.contains("playing")) {
         audio1.play();
-    } else {
-        audio1.load();
-        audio1.pause();
-    }
+    } 
 });
 
 tape2.addEventListener('click', (event) => {
-    if ((event.target).classList.contains("playing") == true) {
+    stopTapes();
+    if ((event.target).classList.contains("playing")) {
         audio2.play();
-    } else {
-        audio2.load();
-        audio2.pause();
     }
 });
 
 tape3.addEventListener('click', (event) => {
-    if ((event.target).classList.contains("playing") == true) {
+    stopTapes();
+    if ((event.target).classList.contains("playing")) {
         audio3.play();
-    } else {
-        audio3.load();
-        audio3.pause();
-    }
+    } 
 });
 
 tape4.addEventListener('click', (event) => {
-    if ((event.target).classList.contains("playing") == true) {
+    stopTapes();
+    if ((event.target).classList.contains("playing")) {
         audio4.play();
-    } else {
-        audio4.load();
-        audio4.pause();
     }
 });
 
