@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/profile-style.css">
     <title>Musify Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
-<body>
+<body class="bod">
     <audio id="audio1" src="songs/Luis Alberto Spinetta - Barro Tal Vez (Official Audio).mp3"></audio>
     <audio id="audio2" src="songs/SPINETTA - BAJAN.mp3"></audio>
     <audio id="audio3" src="songs/Rezo por vos - Luis A. Spinetta.mp3"></audio>
@@ -18,7 +19,7 @@
             <h1>Luis Alberto Spinetta,,,</h1>
         </div>
         <div>
-            <button>Contacto</button>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#contact-modal">Contacto</button>
             <div>
                 <div>
                     <p>Valoracion</p>
@@ -37,14 +38,34 @@
     </header>
 
     <main>
+
+        <div class="modal" id="contact-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contacto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Email: lspinetta@gmail.com</p>
+                  <p>Whatsapp: 1560399487</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div>
             <section id="sobre-mi">
-                <h3>Sobre mí</h3>
+                <h3 class="title">Sobre mí</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?</p>
             </section>
             <section id="instrumentos">
                 <div>
-                    <h3>Instrumentos</h3>
+                    <h3 class="title">Instrumentos</h3>
                     <ul>
                         <li><span>Guitarra</span><img src="images/guitar-acoustic.svg" alt="Guitar icon" class="icon"></li>
                         <li><span>Bajo</span><img src="images/guitar-electric.svg" alt="Guitar icon" class="icon"></li>
@@ -54,7 +75,7 @@
             </section>
             <section id="generos">
                 <div>
-                    <h3>Géneros</h3>
+                    <h3 class="title">Géneros</h3>
                     <ul>
                         <li>Rock progresivo</li>
                         <li>Folk rock</li>
@@ -64,7 +85,7 @@
             </section>
         </div>
         <section id="mi-musica">
-            <h3>Mi música</h3>
+            <h3 class="title">Mi música</h3>
             <div id="videos">
                 <div class="video">
                     <div class="tape" id="tape1" data-id="0">
@@ -147,8 +168,9 @@
     </main>
 
     <footer>
-        <h3>Musify</h3>
+        <h3 class="title">Musify</h3>
     </footer>
     <script src="scripts/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
