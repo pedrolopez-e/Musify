@@ -41,11 +41,14 @@
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
             "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
             "instrumentos": [
-                    "Voz"
+                    "Voz",
+                    "Caja de ritmo",
+                    "Batería"
                 ],
             "generos": [
                     "Rap",
-                    "Hip-Hop"
+                    "Hip-Hop",
+                    "Pop urbano"
                 ],
             "canciones": [
                     "tema1",
@@ -70,7 +73,33 @@
                 ],
             "generos": [
                     "Reggaeton",
-                    "Pop"
+                    "Pop urbano"
+                ],
+            "canciones": [
+                    "tema1",
+                    "tema2",
+                    "tema3",
+                    "tema4"
+                ]
+            },
+            {   
+            "id": 4,
+            "nombre": "Luisina Rampinini",
+            "edad": 28,
+            "zona": "CABA",
+            "valoracion": 5,
+            "email": "lrampinini@gmail.com",
+            "telefono": "123456789",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
+            "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "instrumentos": [
+                    "Voz",
+                    "Chelo",
+                    "Ukelele"
+                ],
+            "generos": [
+                    "Clásico",
+                    "Croata"
                 ],
             "canciones": [
                     "tema1",
