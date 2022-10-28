@@ -1,0 +1,84 @@
+{
+    "profiles": 
+        [
+            {   
+            "id": 1,
+            "nombre": "Luis Alberto Spinetta",
+            "edad": 65,
+            "zona": "CABA",
+            "valoracion": 5,
+            "email": "spinneta@gmail.com",
+            "telefono": "123456789",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
+            "foto": "https://www.lanacion.com.ar/2150000-spinneta.jpg",
+            "instrumentos": [
+                    "Guitarra",
+                    "Bajo",
+                    "Teclado",
+                    "Voz"
+                ],
+            "generos": [
+                    "Rock",
+                    "Pop",
+                    "Folk",
+                    "Alternativo"
+                ],
+            "canciones": [
+                    "tema1",
+                    "tema2",
+                    "tema3",
+                    "tema4"
+                ]
+            },
+            {   
+            "id": 2,
+            "nombre": "Wos",
+            "edad": 24,
+            "zona": "CABA",
+            "valoracion": 5,
+            "email": "wosito@gmail.com",
+            "telefono": "123456789",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
+            "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "instrumentos": [
+                    "Voz"
+                ],
+            "generos": [
+                    "Rap",
+                    "Hip-Hop"
+                ],
+            "canciones": [
+                    "tema1",
+                    "tema2",
+                    "tema3",
+                    "tema4"
+                ]
+            },
+            {   
+            "id": 3,
+            "nombre": "María Becerra",
+            "edad": 23,
+            "zona": "CABA",
+            "valoracion": 5,
+            "email": "becerra@gmail.com",
+            "telefono": "123456789",
+            "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
+            "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "instrumentos": [
+                    "Voz",
+                    "Piano"
+                ],
+            "generos": [
+                    "Reggaeton",
+                    "Pop"
+                ],
+            "canciones": [
+                    "tema1",
+                    "tema2",
+                    "tema3",
+                    "tema4"
+                ]
+            }
+        ]
+    
+}
