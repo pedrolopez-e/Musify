@@ -78,8 +78,11 @@ function getProfileId(_id) {
         function(data){
             // De la lista de perfiles me quedo solo con el que recibo como parametros con (_id) y selecciono ese de la lista
             const profile = data.profiles[_id];
-            // Le agrego el valor del nombre de ese profile al interior del h1 (con id name) del html
+            // Le agrego el valor del nombre de ese profile al interior del h1 (con id name) del html y los otros datos que quiero
             $('#name').append(profile.nombre);
+            $('#valoracion').append(profile.valoracion);
+            $('#edad').append(profile.edad);
+            $('#zona').append(profile.zona);
         },
         "json"
         );
