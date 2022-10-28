@@ -64,7 +64,7 @@ tape4.addEventListener('click', (event) => {
 });
 
 //-------------------- Obtener datos de una API -------------------------
-const API = "https://run.mocky.io/v3/1c3ba4ae-c52f-4a6d-9f0a-16961dc61208";
+const API = "https://run.mocky.io/v3/fcac478d-9b50-4fbc-ae50-ddeefb660306";
 
 $(document).ready(function(){
     const perfilId = getUrlVars(); // Funcion que toma el valor de ID del perfil para mostrarlo en la url
@@ -95,6 +95,10 @@ function getProfileInfo(_id) {
             $('#audio2').attr("src",profile.canciones[1]);
             $('#audio3').attr("src",profile.canciones[2]);
             $('#audio4').attr("src",profile.canciones[3]);
+            // Le pongo el color al theme
+            $('#banner').css("background-color", profile.color);
+            $('.tape').css("background-color", profile.color);
+            $('footer').css("background-color", profile.color);
         },
         "json"
         );
