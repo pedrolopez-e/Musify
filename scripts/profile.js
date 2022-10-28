@@ -63,5 +63,40 @@ tape4.addEventListener('click', (event) => {
     }
 });
 
+//-------------------- Obtener datos de una API -------------------------
+const API = "https://run.mocky.io/v3/331a5620-4880-4a7f-91f8-b33e1d72cfa9";
+
+$(document).ready(function(){
+    const perfilId = getUrlVars(); // Funcion que toma el valor de ID del perfil para mostrarlo en la url
+    console.log("Id del perfil: ",perfilId);
+    getProfileId(perfilId); // Trae y renderiza la info del perfil con el id dado
+})
+
+function getProfileId(_id) {
+    $.get(
+        API,
+        function(data){
+            // De la lista de perfiles me quedo solo con el que recibo como parametros con (_id) y selecciono ese de la lista
+            const profile = data.profiles[_id];
+            // Le agrego el valor del nombre de ese profile al interior del h1 (con id name) del html
+            $('#name').append(profile.nombre);
+        },
+        "json"
+        );
+};
+
+function getUrlVars()
+{
+    var products = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        products.push(hash[1]);
+        // products[hash[0]] = hash[1];
+    }
+    return products[0];
+}
+
 
 
