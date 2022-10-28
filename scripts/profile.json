@@ -24,10 +24,10 @@
                     "Alternativo"
                 ],
             "canciones": [
-                    "tema1",
-                    "tema2",
-                    "tema3",
-                    "tema4"
+                    "songs/spinetta-1.mp3",
+                    "songs/spinetta-2.mp3",
+                    "songs/spinetta-3.mp3",
+                    "songs/spinetta-4.mp3"
                 ]
             },
             {   
@@ -51,10 +51,10 @@
                     "Pop urbano"
                 ],
             "canciones": [
-                    "tema1",
-                    "tema2",
-                    "tema3",
-                    "tema4"
+                    "songs/wos-1.mp3",
+                    "songs/wos-2.mp3",
+                    "songs/wos-3.mp3",
+                    "songs/wos-4.mp3"
                 ]
             },
             {   
@@ -76,36 +76,37 @@
                     "Pop urbano"
                 ],
             "canciones": [
-                    "tema1",
-                    "tema2",
-                    "tema3",
-                    "tema4"
+                    "songs/becerra-1.mp3",
+                    "songs/becerra-2.mp3",
+                    "songs/becerra-3.mp3",
+                    "songs/becerra-4.mp3"
                 ]
             },
             {   
             "id": 4,
-            "nombre": "Luisina Rampinini",
+            "nombre": "La Rosalía",
             "edad": 28,
-            "zona": "CABA",
+            "zona": "Barcelona",
             "valoracion": 5,
-            "email": "lrampinini@gmail.com",
+            "email": "conaltura@gmail.com",
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
             "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
             "instrumentos": [
                     "Voz",
-                    "Chelo",
-                    "Ukelele"
+                    "Castañuelas",
+                    "Guitarra"
                 ],
             "generos": [
-                    "Clásico",
-                    "Croata"
+                    "Flamenco",
+                    "Pop urbano",
+                    "Reggaeton"
                 ],
             "canciones": [
-                    "tema1",
-                    "tema2",
-                    "tema3",
-                    "tema4"
+                    "songs/rosalia-1.mp3",
+                    "songs/rosalia-2.mp3",
+                    "songs/rosalia-3.mp3",
+                    "songs/rosalia-4.mp3"
                 ]
             }
         ]
