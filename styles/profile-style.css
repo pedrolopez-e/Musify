@@ -89,7 +89,7 @@ header div div div :first-child{
     font-weight: bolder;
 }
 
-.valoracion {
+#valoracion {
     color: green;
 }
 
@@ -150,13 +150,13 @@ li {
     justify-content: space-between;
 }
 
-.icon {
+/* .icon {
     width: 1.5rem;
     height: 1.6rem;
     margin-top: 0;
     border: none;
     margin-right: 20rem;
-}
+} */
 
 #videos {
     display: grid;
@@ -354,7 +354,7 @@ footer h3 {
         grid-template-rows: 2fr 1fr;
     }
 
-    #instrumentos, #generos {
+    .instrumentos, .generos {
         margin-top: -1rem;
     }
 
