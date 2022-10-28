@@ -64,15 +64,15 @@ tape4.addEventListener('click', (event) => {
 });
 
 //-------------------- Obtener datos de una API -------------------------
-const API = "https://run.mocky.io/v3/331a5620-4880-4a7f-91f8-b33e1d72cfa9";
+const API = "https://run.mocky.io/v3/64d50dc5-0410-4e58-b91a-0c9624ce8921";
 
 $(document).ready(function(){
     const perfilId = getUrlVars(); // Funcion que toma el valor de ID del perfil para mostrarlo en la url
     console.log("Id del perfil: ",perfilId);
-    getProfileId(perfilId); // Trae y renderiza la info del perfil con el id dado
+    getProfileInfo(perfilId); // Trae y renderiza la info del perfil con el id dado
 })
 
-function getProfileId(_id) {
+function getProfileInfo(_id) {
     $.get(
         API,
         function(data){
@@ -83,6 +83,13 @@ function getProfileId(_id) {
             $('#valoracion').append(profile.valoracion);
             $('#edad').append(profile.edad);
             $('#zona').append(profile.zona);
+            // Agrego cada instrumento a la la lista #instrumentos y cada genero a la lista #generos del html
+            for (let instrumento of profile.instrumentos){
+                $('#instrumentos').append('<li>' + instrumento + '</li>');
+            };
+            for (let genero of profile.generos){
+                $('#generos').append('<li>' + genero + '</li>');
+            }
         },
         "json"
         );
