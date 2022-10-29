@@ -64,7 +64,7 @@ tape4.addEventListener('click', (event) => {
 });
 
 //-------------------- Obtener datos de una API -------------------------
-const API = "https://run.mocky.io/v3/37e39adf-58e8-4def-acc5-06dbf364b2b6";
+const API = "https://run.mocky.io/v3/3125bb45-9751-4875-be32-9f13a91fcb4b";
 
 $(document).ready(function(){
     const perfilId = getUrlVars(); // Funcion que toma el valor de ID del perfil para mostrarlo en la url
@@ -83,6 +83,8 @@ function getProfileInfo(_id) {
             $('#valoracion').append(profile.valoracion);
             $('#edad').append(profile.edad);
             $('#zona').append(profile.zona);
+            // Agrego la foto de perfil
+            $("img").attr("src", profile.foto);
             // Agrego cada instrumento a la la lista #instrumentos y cada genero a la lista #generos del html
             for (let instrumento of profile.instrumentos){
                 $('#instrumentos').append('<li>' + instrumento + '</li>');

@@ -10,7 +10,7 @@
             "email": "spinneta@gmail.com",
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
-            "foto": "https://www.lanacion.com.ar/2150000-spinneta.jpg",
+            "foto": "images/spinetta.jpg",
             "color": "rgb(24, 24, 44)",
             "instrumentos": [
                     "Guitarra",
@@ -52,7 +52,7 @@
             "email": "wosito@gmail.com",
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
-            "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "foto": "images/wos.jpg",
             "color": "rgb(61, 129, 61)",
             "instrumentos": [
                     "Voz",
@@ -92,7 +92,7 @@
             "email": "becerra@gmail.com",
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
-            "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "foto": "images/becerra.jpg",
             "color": "rgb(151, 39, 151)",
             "instrumentos": [
                     "Voz",
@@ -130,7 +130,7 @@
             "email": "conaltura@gmail.com",
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
-            "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "foto": "images/rosalia.jpg",
             "color": "rgb(190, 19, 19)",
             "instrumentos": [
                     "Voz",
