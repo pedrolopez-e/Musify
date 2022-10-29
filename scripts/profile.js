@@ -64,7 +64,7 @@ tape4.addEventListener('click', (event) => {
 });
 
 //-------------------- Obtener datos de una API -------------------------
-const API = "https://run.mocky.io/v3/fcac478d-9b50-4fbc-ae50-ddeefb660306";
+const API = "https://run.mocky.io/v3/37e39adf-58e8-4def-acc5-06dbf364b2b6";
 
 $(document).ready(function(){
     const perfilId = getUrlVars(); // Funcion que toma el valor de ID del perfil para mostrarlo en la url
@@ -91,10 +91,15 @@ function getProfileInfo(_id) {
                 $('#generos').append('<li>' + genero + '</li>');
             }
             // Agrego las canciones a las etiquetas de audio
-            $('#audio1').attr("src",profile.canciones[0]);
-            $('#audio2').attr("src",profile.canciones[1]);
-            $('#audio3').attr("src",profile.canciones[2]);
-            $('#audio4').attr("src",profile.canciones[3]);
+            $('#audio1').attr("src",profile.canciones[0].audio);
+            $('#audio2').attr("src",profile.canciones[1].audio);
+            $('#audio3').attr("src",profile.canciones[2].audio);
+            $('#audio4').attr("src",profile.canciones[3].audio);
+            // Agrego titulos de las canciones en los cassettes
+            $("#song-title-1").append(profile.canciones[0].titulo);
+            $("#song-title-2").append(profile.canciones[1].titulo);
+            $("#song-title-3").append(profile.canciones[2].titulo);
+            $("#song-title-4").append(profile.canciones[3].titulo);
             // Le pongo el color al theme
             $('#banner').css("background-color", profile.color);
             $('.tape').css("background-color", profile.color);

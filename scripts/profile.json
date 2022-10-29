@@ -11,6 +11,7 @@
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
             "foto": "https://www.lanacion.com.ar/2150000-spinneta.jpg",
+            "color": "rgb(24, 24, 44)",
             "instrumentos": [
                     "Guitarra",
                     "Bajo",
@@ -24,10 +25,22 @@
                     "Alternativo"
                 ],
             "canciones": [
-                    "songs/spinetta-1.mp3",
-                    "songs/spinetta-2.mp3",
-                    "songs/spinetta-3.mp3",
-                    "songs/spinetta-4.mp3"
+                            {
+                            "titulo": "Barro tal vez",
+                            "audio": "songs/spinetta-1.mp3"
+                            },
+                            {
+                            "titulo": "Bajan",
+                            "audio": "songs/spinetta-2.mp3"
+                            },
+                            {
+                            "titulo": "Rezo por vos",
+                            "audio": "songs/spinetta-3.mp3"
+                            },
+                            {
+                            "titulo": "Muchacha ojos de papel",
+                            "audio": "songs/spinetta-4.mp3"
+                            }
                 ]
             },
             {   
@@ -40,6 +53,7 @@
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
             "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "color": "rgb(61, 129, 61)",
             "instrumentos": [
                     "Voz",
                     "Caja de ritmo",
@@ -51,11 +65,23 @@
                     "Pop urbano"
                 ],
             "canciones": [
-                    "songs/wos-1.mp3",
-                    "songs/wos-2.mp3",
-                    "songs/wos-3.mp3",
-                    "songs/wos-4.mp3"
-                ]
+                    {
+                    "titulo": "Arrancarmelo",
+                    "audio": "songs/wos-1.mp3"
+                    },
+                    {
+                    "titulo": "Alma dinamita",
+                    "audio": "songs/wos-2.mp3"
+                    },
+                    {
+                    "titulo": "Canguro",
+                    "audio": "songs/wos-3.mp3"
+                    },
+                    {
+                    "titulo": "Quereme",
+                    "audio": "songs/wos-4.mp3"
+                    }
+            ]
             },
             {   
             "id": 3,
@@ -67,6 +93,7 @@
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
             "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "color": "rgb(151, 39, 151)",
             "instrumentos": [
                     "Voz",
                     "Piano"
@@ -76,11 +103,23 @@
                     "Pop urbano"
                 ],
             "canciones": [
-                    "songs/becerra-1.mp3",
-                    "songs/becerra-2.mp3",
-                    "songs/becerra-3.mp3",
-                    "songs/becerra-4.mp3"
-                ]
+                    {
+                    "titulo": "Acaramelao",
+                    "audio": "songs/becerra-1.mp3"
+                    },
+                    {
+                    "titulo": "Automático",
+                    "audio": "songs/becerra-2.mp3"
+                    },
+                    {
+                    "titulo": "Ojalá",
+                    "audio": "songs/becerra-3.mp3"
+                    },
+                    {
+                    "titulo": "High",
+                    "audio": "songs/becerra-4.mp3"
+                    }
+            ]
             },
             {   
             "id": 4,
@@ -92,6 +131,7 @@
             "telefono": "123456789",
             "descripcion": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?",
             "foto": "https://www.lanacion.com.ar/2150000-charly.jpg",
+            "color": "rgb(190, 19, 19)",
             "instrumentos": [
                     "Voz",
                     "Castañuelas",
@@ -103,11 +143,23 @@
                     "Reggaeton"
                 ],
             "canciones": [
-                    "songs/rosalia-1.mp3",
-                    "songs/rosalia-2.mp3",
-                    "songs/rosalia-3.mp3",
-                    "songs/rosalia-4.mp3"
-                ]
+                    {
+                    "titulo": "Con altura",
+                    "audio": "songs/rosalia-1.mp3"
+                    },
+                    {
+                    "titulo": "Millonaria",
+                    "audio": "songs/rosalia-2.mp3"
+                    },
+                    {
+                    "titulo": "Hentai",
+                    "audio": "songs/rosalia-3.mp3"
+                    },
+                    {
+                    "titulo": "Despechá",
+                    "audio": "songs/rosalia-4.mp3"
+                    }
+            ]
             }
         ]
     
