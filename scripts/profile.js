@@ -106,6 +106,9 @@ function getProfileInfo(_id) {
             $('#banner').css("background-color", profile.color);
             $('.tape').css("background-color", profile.color);
             $('footer').css("background-color", profile.color);
+            // Adapto la info del modal para cada artista
+            $('#email').append(profile.email);
+            $('#whp').append(profile.telefono);
         },
         "json"
         );
