@@ -5,70 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/profile-style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/log.png" type="image/x-icon">
     <title>Musify Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
 </head>
-<body>
-    <audio id="audio1" src="songs/Luis Alberto Spinetta - Barro Tal Vez (Official Audio).mp3"></audio>
-    <audio id="audio2" src="songs/SPINETTA - BAJAN.mp3"></audio>
-    <audio id="audio3" src="songs/Rezo por vos - Luis A. Spinetta.mp3"></audio>
-    <audio id="audio4" src="songs/SPINETTA - ALMENDRA MUCHACHA (OJOS DE PAPEL).mp3"></audio>
+<body class="bod">
+    <audio id="audio1" src="songs/spinetta-1.mp3"></audio>
+    <audio id="audio2" src="songs/spinetta-2.mp3"></audio>
+    <audio id="audio3" src="songs/spinetta-3.mp3"></audio>
+    <audio id="audio4" src="songs/spinetta-4.mp3"></audio>
     <header>
         <div id="banner">
-            <img src="images/spinetta.jpg" alt="Profile pic">
-            <h1>Luis Alberto Spinetta,,,</h1>
+            <img alt="Profile pic">
+            <h1 id="name"></h1>
         </div>
         <div>
-            <button>Contacto</button>
-            <div>
+            <button type="button" data-bs-toggle="modal" data-bs-target="#contact-modal">Contacto</button>
+            <div id="valoracion-edad-zona">
                 <div>
                     <p>Valoracion</p>
-                    <p class="valoracion">100%</p>
+                    <p id="valoracion"></p>
                 </div>
                 <div>
                     <p>Edad</p>
-                    <p>25</p>
+                    <p id="edad"></p>
                 </div>
                 <div>
                     <p>Zona</p>
-                    <p>Colegiales</p>
+                    <p id="zona"></p>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
+
+        <div class="modal" id="contact-modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contacto</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p id="email">Email: </p>
+                  <p id="whp">Whatsapp: </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div>
             <section id="sobre-mi">
-                <h3>Sobre mí</h3>
+                <h3 class="title">Sobre mí</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi reiciendis facere, velit repudiandae voluptatum est suscipit alias possimus doloribus ipsam eveniet laboriosam blanditiis. Iusto ut aperiam natus quidem quod quae?</p>
             </section>
-            <section id="instrumentos">
+            <section class="instrumentos">
                 <div>
-                    <h3>Instrumentos</h3>
-                    <ul>
-                        <li><span>Guitarra</span><img src="images/guitar-acoustic.svg" alt="Guitar icon" class="icon"></li>
-                        <li><span>Bajo</span><img src="images/guitar-electric.svg" alt="Guitar icon" class="icon"></li>
-                        <li><span>Voz</span><img src="images/microphone-variant.svg" alt="Guitar icon" class="icon"></li>
-                    </ul>
+                    <h3 class="title">Instrumentos</h3>
+                    <ul id="instrumentos"></ul>
                 </div>
             </section>
-            <section id="generos">
+            <section class="generos">
                 <div>
-                    <h3>Géneros</h3>
-                    <ul>
-                        <li>Rock progresivo</li>
-                        <li>Folk rock</li>
-                        <li>Funk rock</li>
-                    </ul>
+                    <h3 class="title">Géneros</h3>
+                    <ul id="generos"></ul>
                 </div>
             </section>
         </div>
         <section id="mi-musica">
-            <h3>Mi música</h3>
+            <h3 class="title">Mi música</h3>
             <div id="videos">
                 <div class="video">
                     <div class="tape" id="tape1" data-id="0">
                         <div>
+                            <div class="song-title" id="song-title-1"></div>
                             <div class="circles">
                                 <div class="circle">
                                     <div></div>
@@ -88,6 +104,7 @@
                 <div class="video">
                     <div class="tape" id="tape2" data-id="1">
                         <div>
+                            <div class="song-title" id="song-title-2"></div>
                             <div class="circles">
                                 <div class="circle">
                                     <div></div>
@@ -107,6 +124,7 @@
                 <div class="video">
                     <div class="tape" id="tape3" data-id="2">
                         <div>
+                            <div class="song-title" id="song-title-3"></div>
                             <div class="circles">
                                 <div class="circle">
                                     <div></div>
@@ -126,6 +144,7 @@
                 <div class="video">
                     <div class="tape" id="tape4" data-id="3">
                         <div>
+                            <div class="song-title" id="song-title-4"></div>
                             <div class="circles">
                                 <div class="circle">
                                     <div></div>
@@ -147,8 +166,10 @@
     </main>
 
     <footer>
-        <h3>Musify</h3>
+        <h3 class="title">Musify</h3>
     </footer>
-    <script src="scripts/profile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./scripts/profile.js"></script>
 </body>
 </html>
