@@ -64,7 +64,7 @@ tape4.addEventListener('click', (event) => {
 });
 
 //-------------------- Obtener datos de una API -------------------------
-const API = "https://run.mocky.io/v3/3125bb45-9751-4875-be32-9f13a91fcb4b";
+const API = "https://run.mocky.io/v3/581a06ea-2035-4977-8227-13e38a7eb50f";
 
 $(document).ready(function(){
     const perfilId = getUrlVars(); // Funcion que toma el valor de ID del perfil para mostrarlo en la url
@@ -108,7 +108,7 @@ function getProfileInfo(_id) {
             $('footer').css("background-color", profile.color);
             // Adapto la info del modal para cada artista
             $('#email').append(profile.email);
-            $('#whp').append(profile.telefono);
+            $('#telefono').append(profile.telefono);
         },
         "json"
         );
