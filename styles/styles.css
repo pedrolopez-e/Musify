@@ -171,7 +171,7 @@ body{
     padding: 200px 0px;
 }
 
-.cartas-container .programas{
+.cartas-container .perfiles{
     display: flex;
     justify-content: center;
 }
@@ -187,9 +187,13 @@ body{
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
 
-.cartas-container .programas{
+.cartas-container .perfiles{
     gap: 5rem;
     text-align: center;
+}
+
+.img-card{
+    width: 100px;
 }
 
 .carta:first-child{
