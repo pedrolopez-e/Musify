@@ -126,6 +126,3 @@ function getUrlVars()
     }
     return products[0];
 }
-
-
-
