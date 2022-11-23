@@ -384,4 +384,12 @@ footer h3 {
         margin-top: -1rem;
     }
 
+    #videos {
+        transform: scale(0.7);
+    }
+
+    .tape {
+        transform: scale(0.7);
+    }
+
 }
