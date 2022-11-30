@@ -8,20 +8,19 @@
     text-decoration: none;
 }
 
-
 /* MARGENES */
 body,
 h1,
 h2,
 h3,
-.menu{
+.menu {
     margin: 0;
 }
+
 body{
     font-family: 'Poppins', sans-serif;;
     background-color: white;
 }
-
 
 /* NAVBAR */
 .menu{
@@ -38,13 +37,14 @@ body{
     margin-right: 2rem;
     align-items: center;
 }
-.menu_items li a{
-    
+
+.menu_items li a {
     margin: 7px;
     font-size: 1rem;
     display: flex;
     color: white;
 }
+
 .menu_items .crear-publi{
     padding: 6px 6px;
     background-color: #CD5C5C;
@@ -121,6 +121,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .search-container .input input{
     position: relative;
     top: 0;
@@ -143,7 +144,6 @@ body{
     text-shadow: 0 0 2px #fff;
 }
 
-
 /* Carrusel */
 .item img{
     height: 25rem; 
@@ -155,6 +155,7 @@ body{
     background-color: cornflowerblue;
     color: white;
 }
+
 .container{
     width: 1500px;
     margin: auto;
@@ -220,6 +221,7 @@ body{
 .btn_card:hover{
     background-color: rgb(255, 255, 255);
     color: black;
+    cursor: pointer;
 }
 
 
